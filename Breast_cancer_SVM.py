@@ -1,3 +1,4 @@
+# Import necessary libraries
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_breast_cancer
@@ -35,6 +36,7 @@ accuracy = accuracy_score(y_test, y_pred)
 classification_rep = classification_report(y_test, y_pred)
 conf_matrix = confusion_matrix(y_test, y_pred)
 
+# Display evaluation metrics
 print(f"Accuracy: {accuracy:.4f}")
 print("Classification Report:\n", classification_rep)
 print("Confusion Matrix:\n", conf_matrix)
