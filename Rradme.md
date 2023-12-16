@@ -26,8 +26,11 @@ GridSearchCV is used for hyperparameter tuning of the Decision Tree model.
 ## 🏁 Final Model
 The final Decision Tree model is trained with optimized hyperparameters.
 
+## 📈 SVM Classification
+Additionally, an SVM model is trained using a linear kernel.
+
 ## 📊 Visualization
-Decision Tree and final model visualizations are provided.
+Decision Tree, SVM, and final model visualizations are provided.
 
 📊 Data Set Characteristics:
 Number of Instances: 569
@@ -60,13 +63,9 @@ Decision Tree (DT):
 Train Score: 1.0
 Test Score: 0.9532
 Confusion Matrix:
-lua
-Copy code
 [[ 57   5]
  [  3 106]]
 Classification Report:
-markdown
-Copy code
               precision    recall  f1-score   support
 malignant    0.95000000 0.91935484 0.93442623 62
 benign       0.95495495 0.97247706 0.96363636 109
@@ -86,8 +85,6 @@ Worst Concave Points: 0.1297
 Decision Tree Visualization:
 A snippet of the Decision Tree is provided for better interpretability. Notably, the tree reveals key features influencing the classification.
 
-lua
-Copy code
 |--- worst area <= 874.85
 |   |--- worst concave points <= 0.16
 |   |   |--- mean concave points <= 0.05
@@ -95,6 +92,9 @@ Copy code
 |   |--- worst area >  874.85
 |   |   |--- mean concavity >  0.07
 |   |   |   |--- class: 0
+
+SVM Classification:
+The SVM model, trained with a linear kernel, achieves an accuracy of [insert accuracy here]. For detailed evaluation metrics, refer to the classification report.
 
 Hyperparameter Tuning:
 Grid Search parameters for Decision Tree:
