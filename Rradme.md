@@ -107,7 +107,3 @@ Train Score: 0.9598
 Test Score: 0.9357
 Conclusion:
 The project successfully classifies breast cancer using the provided dataset. The Decision Tree model demonstrates strong performance, and hyperparameter tuning further refines the model. The feature importance analysis provides insights into the crucial factors influencing the classification decision.
-
-For more details, refer to the complete code.
-
-Feel free to explore the Decision Tree visualization for an in-depth understanding of the classification process.
